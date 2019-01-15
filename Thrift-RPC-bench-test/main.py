@@ -17,6 +17,7 @@ import time
 this is a RPC bench test for gosun java PCMonitorThriftService project.
 usage:
     python main.py 10000 2 
+    (just like apache ab benchmark command: ab -n 10000 -c 2)
 """
 def test_rpc(q, p):
     transport = TTransport.TFramedTransport(TSocket.TSocket('172.17.0.19', 9935))
